@@ -1,0 +1,36 @@
+.habilidades {
+    margin-bottom: 3rem;
+    padding: 3rem;
+}
+.Skills {
+    min-height: 100vh;
+    margin: 3rem 3rem;
+    
+}
+.container-skills {
+    width: 95%;
+    margin: 3rem auto;
+    align-items: center;
+    flex-direction: column;
+
+/*------*/
+}
+.container-skills  h2 {
+    margin: 2rem 2rem ;
+    position: relative;
+    color: #fff;
+    text-align: center;   
+}
+.container-skills .skills {
+    align-items: center;
+    width: 95%;
+    margin: 2rem auto;
+    position: relative;
+
+}
+@media screen and (max-width: 600px) {
+    .container-skills  h2 {
+      font-size: 1rem;
+    } 
+}
+

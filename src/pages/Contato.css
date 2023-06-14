@@ -1,0 +1,54 @@
+
+.container-contato{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #0d1117;
+    color: #FFF;
+    padding: 1rem;
+  }
+  
+  .title{
+    margin-bottom: 2rem;
+  }
+  
+  .form{
+    max-width: 600px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input{
+    margin-bottom: 1rem;
+    height: 34px;
+    border-radius: 4px;
+    border: 0;
+    padding: 0 8px;
+  }
+  
+  .textarea{
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 0;
+    padding: 8px;
+    height: 94px;
+    resize: none;
+  }
+  
+  .button{
+    height: 34px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    background-color: #0fdbff;
+    font-size: 18px;
+    transition: background-color, transform 0.8s;
+  }
+  
+  .button:hover{
+    background-color: #0fe3ff;
+    transform: scale(1.01);
+  }
