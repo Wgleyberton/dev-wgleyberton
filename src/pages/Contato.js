@@ -2,6 +2,7 @@ import React from "react"
 import { useState } from "react"
 import "./Contato.css"
 import emailjs from "@emailjs/browser"
+import { Link } from "react-router-dom"
 
 
 const Contato = () => {
