@@ -67,7 +67,7 @@ const Contato = () => {
           </form>
           
       </div>
-      <a href="/" className="retorno">Voltar ao topo</a>
+      <Link to="/" className="retorno">Voltar ao topo</Link>
       <div className="footer">© Wgleyberton Alencar 2023</div>
       </div>
     )
