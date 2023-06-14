@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/dev-wgleyberton/Home/static/css/main.2c251c8d.css",
-    "main.js": "/dev-wgleyberton/Home/static/js/main.ce031e75.js",
-    "static/media/barbershop.png": "/dev-wgleyberton/Home/static/media/barbershop.4c0e320ee72b28bf82df.png",
-    "static/media/python-logo.png": "/dev-wgleyberton/Home/static/media/python-logo.78b1e6fefe16092681d1.png",
-    "static/media/react-logo.png": "/dev-wgleyberton/Home/static/media/react-logo.fb59dfc6bb1bac6b0ad0.png",
-    "static/media/marcador-de-pontos.png": "/dev-wgleyberton/Home/static/media/marcador-de-pontos.be711c278ee59870bfff.png",
-    "static/media/acervo.png": "/dev-wgleyberton/Home/static/media/acervo.acc21df0643ef8557b61.png",
-    "static/media/todoList.png": "/dev-wgleyberton/Home/static/media/todoList.a797a1a93de97ecdf14d.png",
-    "static/media/prata.png": "/dev-wgleyberton/Home/static/media/prata.ddf8c2d90c014a920d01.png",
-    "static/media/bronze.png": "/dev-wgleyberton/Home/static/media/bronze.65d40075163410b55a0c.png",
-    "static/media/mongodb-logo.png": "/dev-wgleyberton/Home/static/media/mongodb-logo.b1130fab18408e0f94a0.png",
-    "static/media/github-logo.png": "/dev-wgleyberton/Home/static/media/github-logo.bb1bcb4c34e56ddbc178.png",
-    "static/media/node-logo.png": "/dev-wgleyberton/Home/static/media/node-logo.c6649cb118c1ede849ad.png",
-    "static/media/next-logo.png": "/dev-wgleyberton/Home/static/media/next-logo.48ddc8121a0fcb543d64.png",
-    "static/media/css-3-logo.png": "/dev-wgleyberton/Home/static/media/css-3-logo.bc75ccc78e3bf74f8aed.png",
-    "static/media/csharp-logo.png": "/dev-wgleyberton/Home/static/media/csharp-logo.f25b30cef849442c29da.png",
-    "static/media/mysql-logo.png": "/dev-wgleyberton/Home/static/media/mysql-logo.a04abbf76b39676bc4d9.png",
-    "static/media/javascript-logo.png": "/dev-wgleyberton/Home/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
-    "index.html": "/dev-wgleyberton/Home/index.html",
-    "main.2c251c8d.css.map": "/dev-wgleyberton/Home/static/css/main.2c251c8d.css.map",
-    "main.ce031e75.js.map": "/dev-wgleyberton/Home/static/js/main.ce031e75.js.map"
+    "main.css": "/dev-wgleyberton/home/static/css/main.60b8484a.css",
+    "main.js": "/dev-wgleyberton/home/static/js/main.c0baa63f.js",
+    "static/media/barbershop.png": "/dev-wgleyberton/home/static/media/barbershop.4c0e320ee72b28bf82df.png",
+    "static/media/python-logo.png": "/dev-wgleyberton/home/static/media/python-logo.78b1e6fefe16092681d1.png",
+    "static/media/react-logo.png": "/dev-wgleyberton/home/static/media/react-logo.fb59dfc6bb1bac6b0ad0.png",
+    "static/media/marcador-de-pontos.png": "/dev-wgleyberton/home/static/media/marcador-de-pontos.be711c278ee59870bfff.png",
+    "static/media/acervo.png": "/dev-wgleyberton/home/static/media/acervo.acc21df0643ef8557b61.png",
+    "static/media/todoList.png": "/dev-wgleyberton/home/static/media/todoList.a797a1a93de97ecdf14d.png",
+    "static/media/prata.png": "/dev-wgleyberton/home/static/media/prata.ddf8c2d90c014a920d01.png",
+    "static/media/bronze.png": "/dev-wgleyberton/home/static/media/bronze.65d40075163410b55a0c.png",
+    "static/media/mongodb-logo.png": "/dev-wgleyberton/home/static/media/mongodb-logo.b1130fab18408e0f94a0.png",
+    "static/media/github-logo.png": "/dev-wgleyberton/home/static/media/github-logo.bb1bcb4c34e56ddbc178.png",
+    "static/media/node-logo.png": "/dev-wgleyberton/home/static/media/node-logo.c6649cb118c1ede849ad.png",
+    "static/media/next-logo.png": "/dev-wgleyberton/home/static/media/next-logo.48ddc8121a0fcb543d64.png",
+    "static/media/css-3-logo.png": "/dev-wgleyberton/home/static/media/css-3-logo.bc75ccc78e3bf74f8aed.png",
+    "static/media/csharp-logo.png": "/dev-wgleyberton/home/static/media/csharp-logo.f25b30cef849442c29da.png",
+    "static/media/mysql-logo.png": "/dev-wgleyberton/home/static/media/mysql-logo.a04abbf76b39676bc4d9.png",
+    "static/media/javascript-logo.png": "/dev-wgleyberton/home/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
+    "index.html": "/dev-wgleyberton/home/index.html",
+    "main.60b8484a.css.map": "/dev-wgleyberton/home/static/css/main.60b8484a.css.map",
+    "main.c0baa63f.js.map": "/dev-wgleyberton/home/static/js/main.c0baa63f.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c251c8d.css",
-    "static/js/main.ce031e75.js"
+    "static/css/main.60b8484a.css",
+    "static/js/main.c0baa63f.js"
   ]
 }
