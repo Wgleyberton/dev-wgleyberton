@@ -38,6 +38,7 @@ const Contato = () => {
   }
 
     return(
+      <div className="contato">
       <div className="container-contato" id="contato" >
           <h1 className="title"> Entre em contato</h1>
           <form className="form" onSubmit={sendEmail}>
@@ -64,6 +65,10 @@ const Contato = () => {
             />
             <input className="button" type="submit" value="Enviar" />
           </form>
+          
+      </div>
+      <a href="#home" className="retorno">Voltar ao topo</a>
+      <div className="footer">© Wgleyberton Alencar 2023</div>
       </div>
     )
 }

@@ -8,6 +8,7 @@
     background-color: #0d1117;
     color: #FFF;
     padding: 1rem;
+
   }
   
   .title{
@@ -52,3 +53,23 @@
     background-color: #0fe3ff;
     transform: scale(1.01);
   }
+  .contato .retorno {
+    position: relative;
+    text-decoration: none;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 15px;
+    align-self: flex-end;
+    font-size: 1.3rem;
+    color: #fff; 
+ }
+ .contato .footer {
+  position: relative;
+  width: auto;
+  text-align: center;
+  margin-top: auto;
+  font-size: 1.2rem;
+  background-color: #2596be ;
+  color: #fff; 
+ }

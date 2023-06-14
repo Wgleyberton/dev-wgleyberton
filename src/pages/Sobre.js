@@ -72,7 +72,7 @@ const Sobre = () => {
                                 </div>
                         </div>
                     </div>
-                </div>   
+                </div>                  
         </div>
     )
 }
