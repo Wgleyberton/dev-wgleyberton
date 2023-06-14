@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 import App from './App.js'
 import Home from './pages/Home.js'
@@ -12,7 +12,7 @@ import Portfolio from './pages/Portfolio.js'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
           <Route element={<App />}>
             <Route path="/" element={<Home />} />
@@ -22,6 +22,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="/Contato" element={<Contato />} />
           </Route>
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 )
