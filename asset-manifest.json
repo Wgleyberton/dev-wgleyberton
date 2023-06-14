@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dev-wgleyberton/home/static/css/main.60b8484a.css",
-    "main.js": "/dev-wgleyberton/home/static/js/main.c0baa63f.js",
+    "main.js": "/dev-wgleyberton/home/static/js/main.84630124.js",
     "static/media/barbershop.png": "/dev-wgleyberton/home/static/media/barbershop.4c0e320ee72b28bf82df.png",
     "static/media/python-logo.png": "/dev-wgleyberton/home/static/media/python-logo.78b1e6fefe16092681d1.png",
     "static/media/react-logo.png": "/dev-wgleyberton/home/static/media/react-logo.fb59dfc6bb1bac6b0ad0.png",
@@ -20,10 +20,10 @@
     "static/media/javascript-logo.png": "/dev-wgleyberton/home/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/dev-wgleyberton/home/index.html",
     "main.60b8484a.css.map": "/dev-wgleyberton/home/static/css/main.60b8484a.css.map",
-    "main.c0baa63f.js.map": "/dev-wgleyberton/home/static/js/main.c0baa63f.js.map"
+    "main.84630124.js.map": "/dev-wgleyberton/home/static/js/main.84630124.js.map"
   },
   "entrypoints": [
     "static/css/main.60b8484a.css",
-    "static/js/main.c0baa63f.js"
+    "static/js/main.84630124.js"
   ]
 }
