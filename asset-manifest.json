@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dev-wgleyberton/static/css/main.47820dcc.css",
-    "main.js": "/dev-wgleyberton/static/js/main.f02b258a.js",
+    "main.js": "/dev-wgleyberton/static/js/main.7e2b70e2.js",
     "static/media/barbershop.png": "/dev-wgleyberton/static/media/barbershop.4c0e320ee72b28bf82df.png",
     "static/media/python-logo.png": "/dev-wgleyberton/static/media/python-logo.78b1e6fefe16092681d1.png",
     "static/media/react-logo.png": "/dev-wgleyberton/static/media/react-logo.fb59dfc6bb1bac6b0ad0.png",
@@ -20,10 +20,10 @@
     "static/media/javascript-logo.png": "/dev-wgleyberton/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/dev-wgleyberton/index.html",
     "main.47820dcc.css.map": "/dev-wgleyberton/static/css/main.47820dcc.css.map",
-    "main.f02b258a.js.map": "/dev-wgleyberton/static/js/main.f02b258a.js.map"
+    "main.7e2b70e2.js.map": "/dev-wgleyberton/static/js/main.7e2b70e2.js.map"
   },
   "entrypoints": [
     "static/css/main.47820dcc.css",
-    "static/js/main.f02b258a.js"
+    "static/js/main.7e2b70e2.js"
   ]
 }
