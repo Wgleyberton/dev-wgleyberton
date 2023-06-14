@@ -3,7 +3,6 @@ import reactlogo from "../img/react-logo.png"
 import javascript from "../img/javascript-logo.png"
 import github from "../img/github-logo.png"
 import css from "../img/css-3-logo.png"
-import prata from "../img/prata.png"
 import './CardSkills.css'
 
 
@@ -17,7 +16,6 @@ const MainSkills = ()=> {
                         </div>
                         <div className="back-card">
                             <h2>Intermediário</h2>
-                            <img alt="medalha-de-prata" src={prata} />
                         </div>
                     </div>
                 </div>
@@ -29,7 +27,6 @@ const MainSkills = ()=> {
                         </div>
                         <div className="back-card">
                             <h2>Intermediário</h2>
-                            <img alt="medalha-de-prata" src={prata} />
                         </div>
                     </div>
                 </div>
@@ -41,7 +38,6 @@ const MainSkills = ()=> {
                         </div>
                         <div className="back-card">
                             <h2>Intermediário</h2>
-                            <img alt="medalha-de-prata" src={prata} />
                         </div>
                     </div>
                 </div>
@@ -53,7 +49,6 @@ const MainSkills = ()=> {
                         </div>
                         <div className="back-card">
                             <h2>Intermediário</h2>
-                            <img alt="medalha-de-prata" src={prata} />
                         </div>
                     </div>
                 </div>

@@ -4,8 +4,6 @@ import typescript from "../img/typescript-logo.png"
 import next from "../img/next-logo.png"
 import node from "../img/node-logo.png"
 import mongodb from "../img/mongodb-logo.png"
-import bronze from "../img/bronze.png"
-import prata from "../img/prata.png"
 import './CardSkills.css'
 
 const Studying = ()=> {
@@ -18,7 +16,6 @@ const Studying = ()=> {
                     </div>
                     <div className="back-card">
                         <h2>Básico</h2>
-                        <img alt="medalha-de-bronze" src={bronze} />
                     </div>
                 </div>
             </div>
@@ -30,7 +27,6 @@ const Studying = ()=> {
                     </div>
                     <div className="back-card">
                         <h2>Básico</h2>
-                        <img alt="medalha-de-bronze" src={bronze} />
                     </div>
                 </div>
             </div>
@@ -42,7 +38,6 @@ const Studying = ()=> {
                     </div>
                     <div className="back-card">
                         <h2>Básico</h2>
-                        <img alt="medalha-de-bronze" src={bronze} />
                     </div>
                 </div>
             </div>
@@ -54,7 +49,6 @@ const Studying = ()=> {
                     </div>
                     <div className="back-card">
                         <h2>Intermediário</h2>
-                        <img alt="medalha-de-prata" src={prata} />
                     </div>
                 </div>
             </div>
@@ -66,7 +60,6 @@ const Studying = ()=> {
                     </div>
                     <div className="back-card">
                         <h2>Intermediário</h2>
-                        <img alt="medalha-de-prata" src={prata} />
                     </div>
                 </div>
             </div>

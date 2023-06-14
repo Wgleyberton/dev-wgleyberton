@@ -3,9 +3,6 @@ import { useEffect } from "react";
 import "./Sobre.css"
 import VanillaTilt from "vanilla-tilt"
 
-
-
-
 const Sobre = () => {
 
     const vanilla = VanillaTilt.init(document.querySelectorAll(".experiencias-card"), {

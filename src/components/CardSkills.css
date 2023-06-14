@@ -53,10 +53,12 @@
 }
   
 .back-card {
-    background-color: #0d1117;
-    color: #2596be;
+    
     transform: rotateY(180deg);
     align-items: center;
+    background-color: #0d1117;
+    max-width: 7rem;
+    max-height: 7rem;
     
 }
 .back-card h2 {
@@ -64,12 +66,12 @@
     position: relative;
 
 }
-.back-card img {
+/*.back-card img {
     max-width: 7rem;
     max-height: 7rem;
     align-items: center;
     margin: 0 auto;
-}
+}*/
 @media screen and (max-width: 600px) {
   .flip-card {
     width: 3rem;

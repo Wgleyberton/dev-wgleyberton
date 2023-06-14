@@ -2,13 +2,19 @@ import React from "react"
 import { useState } from "react"
 import "./Contato.css"
 import emailjs from "@emailjs/browser"
-import { Link } from "react-router-dom"
-
 
 const Contato = () => {
   const[name, setName] = useState('')
   const[email, setEmail] = useState('')
   const[message, setMessage] = useState('')
+
+  const handleClickScroll = () => {
+    const element = document.getElementById('home');
+    if(element){
+      element.scrollIntoView({behavior: 'smooth'})
+    }
+  };
+     
 
   function sendEmail(e) {
     e.preventDefault();
@@ -39,8 +45,8 @@ const Contato = () => {
   }
 
     return(
-      <div className="contato">
-      <div className="container-contato" id="contato" >
+      <div className="contato" id="contato">
+      <div className="container-contato"  >
           <h1 className="title"> Entre em contato</h1>
           <form className="form" onSubmit={sendEmail}>
             <input
@@ -68,7 +74,7 @@ const Contato = () => {
           </form>
           
       </div>
-      
+        <button className="btn-scroll" onClick={handleClickScroll}></button>
       <div className="footer">© Wgleyberton Alencar 2023</div>
       </div>
     )

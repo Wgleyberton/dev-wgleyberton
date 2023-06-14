@@ -6,14 +6,8 @@
     background-color: #0d1117;
         
 }
-#navbar h2 a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #fff;
-    text-decoration: none;
-    transition: 1s;
-    font-size: 2rem;
+#navbar h2 button {
+    display: none;
 }
 #navbar h2 a:hover {
     color: #2596be;
@@ -23,14 +17,18 @@
     gap: 0.5rem;
     
 }
-#navbar div a {
+#navbar div button {
+    background-color: #0d1117;
+    border: none;
+    cursor: pointer;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     transition: 1s;
-    
+    width: 7rem;
+    font-size: 1rem;
 }
-#navbar div a:hover {
+#navbar div button:hover {
     color: #2596be;
 }
 @media screen and (max-width: 600px) {
