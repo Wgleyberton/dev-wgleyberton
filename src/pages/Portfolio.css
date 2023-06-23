@@ -79,6 +79,20 @@
     background-size: 15rem 7rem;
     border-radius: 15px;
 }
+.container-portfolio #contatos {
+    background-image: url('../img/contatos.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 15rem 7rem;
+    border-radius: 15px;
+}
+.container-portfolio #movies {
+    background-image: url('../img/movies.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 15rem 7rem;
+    border-radius: 15px;
+}
 
 .container-portfolio .card:hover .content {
     opacity: 10;

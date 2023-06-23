@@ -81,3 +81,23 @@
   background-color: #2596be ;
   color: #fff; 
  }
+
+ @media screen and (max-width: 600px) {
+  .contato{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+  .container-contato{
+    margin: 0;
+    padding: 1rem;
+    width: 100vw;
+  }
+
+  .contato .btn-scroll{
+    margin-left: 85vw;
+  }
+  .contato .footer{
+    width: auto;
+  }
+}

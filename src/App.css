@@ -1,6 +1,6 @@
 * {
   font-family: Helvetica;
-  margin: 0rem;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -19,3 +19,18 @@ body {
   z-index: 999;
   line-height: 100px;
 }
+@media screen and (max-width: 600px) {
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+}
+
+

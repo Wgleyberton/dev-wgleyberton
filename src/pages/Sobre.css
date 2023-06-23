@@ -109,15 +109,37 @@
 }
 
 @media screen and (max-width: 600px) {
+    .sobre{
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+    }
     .sobre .container-sobre {
         flex-direction: column;
     }
-    .sobre .container-sobre .cursos {
-        border-left: none;
+    .sobre .container-sobre p{
+        margin-bottom: 1.5rem;
     }
     .sobre .experiencias .cards-exp {
         flex-direction: column;
         flex-wrap: wrap;
+        padding: 1rem;
+    }
+    .sobre .experiencias .cards-exp .experiencias-card{
+        padding: 1rem;
+    }
+    .sobre .experiencias .cards-exp .experiencias-card p {
+        margin: 2px 2px;
+    }
+    .sobre .container-sobre .apresentacao {
+        text-align: left;
+        width: 90vw;
+    }
+    .sobre .container-sobre .cursos {
+        text-align: left;
+        border-left: none;
+        width: 90vw;
     }
 }
 

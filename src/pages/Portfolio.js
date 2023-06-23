@@ -43,6 +43,16 @@ const Portfolio = () => {
         target: "_blank",
         rel: "noreferrer",
      };
+     const contatos = {
+        href: "https://github.com/Wgleyberton/Cadastro-de-Contatos",
+        target: "_blank",
+        rel: "noreferrer",
+     };
+     const movies = {
+        href: "https://wgleyberton.github.io/movies-library/",
+        target: "_blank",
+        rel: "noreferrer",
+     };
 
     return(
         <div className="portfolio" id="portfolio" >
@@ -52,7 +62,7 @@ const Portfolio = () => {
                         <div className="content"  >
                         <a {...barbershop}><h3>Barbershop</h3></a>
                             <p>
-                            Esse é um projeto de uma landing page de uma barbearia fictícia. O objetivo desse projeto é demonstrar habilidades de desenvolvimento front-end com HTML, CSS e JavaScript.
+                            Landing page de uma barbearia fictícia. O objetivo desse projeto é demonstrar habilidades de desenvolvimento front-end com HTML, CSS e JavaScript.
                             </p>
                         </div>
                     </div>
@@ -77,6 +87,22 @@ const Portfolio = () => {
                         <a {...acervo}><h3>Acervo de Obras Intelectuais</h3></a>
                             <p>
                             Sistema de consulta de obras intelectuais. Construído em ASP.NET MVC, C# e JavaScript.
+                            </p> 
+                        </div>
+                    </div>
+                    <div className="card"  id="contatos">
+                        <div className="content">
+                        <a {...contatos}><h3>Cadastro de Contatos</h3></a>
+                            <p>
+                            Sistema de cadastro de contatos. Construído em ASP.NET MVC, C# e JavaScript.
+                            </p> 
+                        </div>
+                    </div>
+                    <div className="card"  id="movies">
+                        <div className="content">
+                        <a {...movies}><h3>Movies Library</h3></a>
+                            <p>
+                                Biblioteca de filmes utilizando API do TMDB contruída em React Vite
                             </p> 
                         </div>
                     </div>
