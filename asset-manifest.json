@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/dev-wgleyberton/static/css/main.cd31721c.css",
-    "main.js": "/dev-wgleyberton/static/js/main.b2e491e2.js",
+    "main.css": "/dev-wgleyberton/static/css/main.70b38437.css",
+    "main.js": "/dev-wgleyberton/static/js/main.82b25172.js",
     "static/media/barbershop.png": "/dev-wgleyberton/static/media/barbershop.4c0e320ee72b28bf82df.png",
+    "static/media/movies.png": "/dev-wgleyberton/static/media/movies.dd2a7fbf83dc4fa4226b.png",
     "static/media/python-logo.png": "/dev-wgleyberton/static/media/python-logo.78b1e6fefe16092681d1.png",
     "static/media/react-logo.png": "/dev-wgleyberton/static/media/react-logo.fb59dfc6bb1bac6b0ad0.png",
+    "static/media/contatos.png": "/dev-wgleyberton/static/media/contatos.6574fa9452be03507a6f.png",
     "static/media/marcador-de-pontos.png": "/dev-wgleyberton/static/media/marcador-de-pontos.be711c278ee59870bfff.png",
     "static/media/acervo.png": "/dev-wgleyberton/static/media/acervo.acc21df0643ef8557b61.png",
     "static/media/todoList.png": "/dev-wgleyberton/static/media/todoList.a797a1a93de97ecdf14d.png",
@@ -17,11 +19,11 @@
     "static/media/mysql-logo.png": "/dev-wgleyberton/static/media/mysql-logo.a04abbf76b39676bc4d9.png",
     "static/media/javascript-logo.png": "/dev-wgleyberton/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/dev-wgleyberton/index.html",
-    "main.cd31721c.css.map": "/dev-wgleyberton/static/css/main.cd31721c.css.map",
-    "main.b2e491e2.js.map": "/dev-wgleyberton/static/js/main.b2e491e2.js.map"
+    "main.70b38437.css.map": "/dev-wgleyberton/static/css/main.70b38437.css.map",
+    "main.82b25172.js.map": "/dev-wgleyberton/static/js/main.82b25172.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd31721c.css",
-    "static/js/main.b2e491e2.js"
+    "static/css/main.70b38437.css",
+    "static/js/main.82b25172.js"
   ]
 }
