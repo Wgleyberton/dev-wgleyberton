@@ -50,11 +50,10 @@
 }
 @media screen and (max-width: 600px) {
     .home{
-        margin: 0;
+        margin: 2rem;
         width: 100%;
         padding: 0;
         flex-direction: column;
-        min-height: 100vh;
     }
     .container-home{
         box-sizing: border-box;
