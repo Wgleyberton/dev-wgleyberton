@@ -74,7 +74,7 @@ const Contato = () => {
             </form>
             
         </div>
-        <button className="btn-scroll" onClick={handleClickScroll}></button>
+        <button className="btn-scroll" onClick={handleClickScroll}>Topo</button>
       <div className="footer">© Wgleyberton Alencar 2023</div>
       </div>
     )

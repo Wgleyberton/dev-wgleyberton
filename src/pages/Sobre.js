@@ -43,10 +43,10 @@ const Sobre = () => {
                         <p>Scrum fundamentals certified - ScrumStudy.</p>
                         
                         <span><h2>Cursos:</h2></span>
-                        <p>Desenvolvimento de aplicativos para plataforma iOS.</p> 
+                        <p>FullStack Javascript - Node.js, React.js, Next.js</p>
                         <p>Developer.Net (Asp.net com C#.net).</p>
-                        <p>FullStack Javascript - Node.js, React.js, Next.js (em conclusão)</p>
-                        <p>Desenvolvimento Web Avançado com PHP, Laravel e VUE.js (em conclusão</p>
+                        <p>Desenvolvimento de aplicativos para plataforma iOS.</p> 
+                        <p>Desenvolvimento Web Avançado com PHP, Laravel e VUE.js</p>
 
                     </div>
                     <div className="experiencias">
