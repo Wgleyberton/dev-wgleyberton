@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dev-wgleyberton/static/css/main.9f860809.css",
+    "main.css": "/dev-wgleyberton/static/css/main.139fea71.css",
     "main.js": "/dev-wgleyberton/static/js/main.138e1c93.js",
     "static/media/barbershop.png": "/dev-wgleyberton/static/media/barbershop.4c0e320ee72b28bf82df.png",
     "static/media/movies.png": "/dev-wgleyberton/static/media/movies.dd2a7fbf83dc4fa4226b.png",
@@ -19,11 +19,11 @@
     "static/media/mysql-logo.png": "/dev-wgleyberton/static/media/mysql-logo.a04abbf76b39676bc4d9.png",
     "static/media/javascript-logo.png": "/dev-wgleyberton/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/dev-wgleyberton/index.html",
-    "main.9f860809.css.map": "/dev-wgleyberton/static/css/main.9f860809.css.map",
+    "main.139fea71.css.map": "/dev-wgleyberton/static/css/main.139fea71.css.map",
     "main.138e1c93.js.map": "/dev-wgleyberton/static/js/main.138e1c93.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f860809.css",
+    "static/css/main.139fea71.css",
     "static/js/main.138e1c93.js"
   ]
 }
