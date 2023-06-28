@@ -94,9 +94,11 @@
   }
 
   .contato .btn-scroll{
-    margin-left: 85vw;
+    margin-left: 45vw;
   }
   .contato .footer{
-    width: auto;
+    width: 105%;
+    padding: 0;
+    margin: 0;
   }
 }

@@ -66,16 +66,13 @@
     position: relative;
 
 }
-/*.back-card img {
-    max-width: 7rem;
-    max-height: 7rem;
-    align-items: center;
-    margin: 0 auto;
-}*/
+
 @media screen and (max-width: 600px) {
   .flip-card {
     width: 3rem;
     height: 3rem; 
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;    
   }
   .flip-card-inner {
     width: 3rem;
@@ -83,17 +80,21 @@
   }
   .front-card, .back-card {
     width: 3rem;
-    height: 3rem;
+    height: 3rem;    
   }
   .front-card img {
     width: 3rem;
     height: 3rem;
   }
+  .back-card {
+    color: #fff;
+  }
   .back-card h2 {
     font-size: 0.5rem;
+    margin: 1rem auto;
   }
   .back-card img {
     width: 3rem;
-    height: 3rem;
+    height: 3rem; 
   }
 }
