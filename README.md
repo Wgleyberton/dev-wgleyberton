@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Dev-Wgleyberton
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao repositório do projeto **Dev-Wgleyberton**!
 
-## Available Scripts
+## Objetivo
 
-In the project directory, you can run:
+Este projeto trata-se de um portfólio onde serão mantidas informações de aplicações desenvolvidas, tecnologias que estou utilizando e estudando, divulgação do meu github e linkedin e formas de entrar em contato.
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O **Dev-Wgleyberton** é desenvolvido utilizando as seguintes tecnologias:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- HTML: Utilizado para a estruturação e marcação do conteúdo web.
+- CSS: Utilizado para a estilização e aparência visual do site.
+- JavaScript: Utilizado para adicionar interatividade e funcionalidades ao site.
+- Framework Bootstrap: Utilizado para agilizar o desenvolvimento e fornecer um design responsivo.
+- Git: Utilizado para controle de versão do código-fonte.
+- GitHub Pages: Utilizado para hospedar o site do projeto.
 
-### `npm test`
+## Como Contribuir
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Se você deseja contribuir com o projeto **Dev-Wgleyberton**, siga as etapas abaixo:
+entre em contato pelo formulário na página https://wgleyberton.github.io/dev-wgleyberton/ com o assunto feedback, informando o que achou do meu portfólio e o que poderia ser melhorado.
 
-### `npm run build`
+## Acessando pelo Github Pages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+https://wgleyberton.github.io/dev-wgleyberton/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Como Executar Localmente
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para executar o **Dev-Wgleyberton** localmente em sua máquina, siga as etapas abaixo:
 
-### `npm run eject`
+1. Clone o repositório: `git clone https://github.com/Wgleyberton/dev-wgleyberton.git`.
+2. Navegue até o diretório do projeto: `cd dev-wgleyberton`.
+3. Abra o arquivo `index.html` em seu navegador web.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Recursos Adicionais
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Além do código-fonte do projeto, você também pode encontrar recursos adicionais neste repositório, como:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Documentação: Informações adicionais sobre o projeto, suas funcionalidades e como utilizá-lo.
+- Imagens: Imagens utilizadas no site.
+- Arquivos CSS e JavaScript: Arquivos de estilo e scripts adicionais, caso sejam utilizados no projeto.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contato
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se você tiver alguma dúvida, sugestão ou feedback sobre o projeto, sinta-se à vontade para entrar em contato com o desenvolvedor Wgleyberton através do seguinte e-mail: wgleybertonds@gmail.com
+Esperamos que você aprecie o projeto **Dev-Wgleyberton**! Obrigado por sua visita e contribuições.
