@@ -9,7 +9,7 @@
     flex-direction: column;
 }
 .portfolio h2 {
-    margin: 0 auto;
+    margin: 2rem auto;
     align-items: center;
     text-align: center;
     font-size: 2rem;
@@ -17,7 +17,7 @@
 }
 
 .container-portfolio {
-    margin: 0 auto;
+    margin: 5rem auto;
     position: relative;
     display: flex;
     justify-content: center;

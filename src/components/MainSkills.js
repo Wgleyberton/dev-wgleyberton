@@ -1,8 +1,9 @@
 import React from "react"
 import reactlogo from "../img/react-logo.png"
 import javascript from "../img/javascript-logo.png"
-import github from "../img/github-logo.png"
-import css from "../img/css-3-logo.png"
+import git from "../img/git-logo.png"
+import cicd from "../img/cicd-logo.png"
+import php from "../img/php-logo.png"
 import './CardSkills.css'
 
 
@@ -12,10 +13,15 @@ const MainSkills = ()=> {
                 <div className="flip-card">
                     <div className="flip-card-inner">
                         <div className="front-card">
-                            <img alt="react-logo" src={reactlogo}/>
+                            <img alt="php-logo" src={php}/>
                         </div>
-                        <div className="back-card">
-                            <h2>Intermediário</h2>
+                    </div>
+                </div>
+
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="front-card">
+                            <img alt="react-logo" src={reactlogo}/>
                         </div>
                     </div>
                 </div>
@@ -25,8 +31,13 @@ const MainSkills = ()=> {
                         <div className="front-card">
                             <img alt="javascript-logo" src={javascript}/>
                         </div>
-                        <div className="back-card">
-                            <h2>Intermediário</h2>
+                    </div>
+                </div>
+
+                <div className="flip-card">
+                    <div className="flip-card-inner">
+                        <div className="front-card">
+                            <img alt="git-logo" src={git}/>
                         </div>
                     </div>
                 </div>
@@ -34,21 +45,7 @@ const MainSkills = ()=> {
                 <div className="flip-card">
                     <div className="flip-card-inner">
                         <div className="front-card">
-                            <img alt="github-logo" src={github}/>
-                        </div>
-                        <div className="back-card">
-                            <h2>Intermediário</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="flip-card">
-                    <div className="flip-card-inner">
-                        <div className="front-card">
-                            <img alt="css-logo" src={css}/>
-                        </div>
-                        <div className="back-card">
-                            <h2>Intermediário</h2>
+                            <img alt="cicd-logo" src={cicd}/>
                         </div>
                     </div>
                 </div>

@@ -1,20 +1,19 @@
 import React from "react"
 import csharp from "../img/csharp-logo.png"
 import java from "../img/java-logo.png"
-import php from "../img/php-logo.png"
+import postgres from "../img/postgres-logo.png"
 import mysql from "../img/mysql-logo.png"
+import python from "../img/python-logo.png"
 import './CardSkills.css'
 
-const OtherSkills = ()=> {
-    return(
+const OtherSkills = () => {
+    return (
         <div className="container-card">
+
             <div className="flip-card">
                 <div className="flip-card-inner">
                     <div className="front-card">
-                        <img alt="csharp-logo" src={csharp}/>
-                    </div>
-                    <div className="back-card">
-                        <h2>Básico</h2>
+                        <img alt="java-logo" src={java} />
                     </div>
                 </div>
             </div>
@@ -22,10 +21,7 @@ const OtherSkills = ()=> {
             <div className="flip-card">
                 <div className="flip-card-inner">
                     <div className="front-card">
-                        <img alt="java-logo" src={java}/>
-                    </div>
-                    <div className="back-card">
-                        <h2>Básico</h2>
+                        <img alt="csharp-logo" src={csharp} />
                     </div>
                 </div>
             </div>
@@ -33,10 +29,7 @@ const OtherSkills = ()=> {
             <div className="flip-card">
                 <div className="flip-card-inner">
                     <div className="front-card">
-                        <img alt="php-logo" src={php}/>
-                    </div>
-                    <div className="back-card">
-                        <h2>Básico</h2>
+                        <img alt="python-logo" src={python} />
                     </div>
                 </div>
             </div>
@@ -44,10 +37,15 @@ const OtherSkills = ()=> {
             <div className="flip-card">
                 <div className="flip-card-inner">
                     <div className="front-card">
-                        <img alt="react-logo" src={mysql}/>
+                        <img alt="postgres-logo" src={postgres} />
                     </div>
-                    <div className="back-card">
-                        <h2>Intermediário</h2>
+                </div>
+            </div>
+
+            <div className="flip-card">
+                <div className="flip-card-inner">
+                    <div className="front-card">
+                        <img alt="react-logo" src={mysql} />
                     </div>
                 </div>
             </div>
