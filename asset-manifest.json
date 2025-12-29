@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/dev-wgleyberton/static/css/main.139fea71.css",
-    "main.js": "/dev-wgleyberton/static/js/main.138e1c93.js",
+    "main.css": "/dev-wgleyberton/static/css/main.a91a680c.css",
+    "main.js": "/dev-wgleyberton/static/js/main.a466e49d.js",
     "static/media/barbershop.png": "/dev-wgleyberton/static/media/barbershop.4c0e320ee72b28bf82df.png",
     "static/media/movies.png": "/dev-wgleyberton/static/media/movies.dd2a7fbf83dc4fa4226b.png",
     "static/media/python-logo.png": "/dev-wgleyberton/static/media/python-logo.78b1e6fefe16092681d1.png",
     "static/media/react-logo.png": "/dev-wgleyberton/static/media/react-logo.fb59dfc6bb1bac6b0ad0.png",
     "static/media/contatos.png": "/dev-wgleyberton/static/media/contatos.6574fa9452be03507a6f.png",
     "static/media/marcador-de-pontos.png": "/dev-wgleyberton/static/media/marcador-de-pontos.be711c278ee59870bfff.png",
+    "static/media/cicd-logo.png": "/dev-wgleyberton/static/media/cicd-logo.ff56fc0b9a968396e7d3.png",
     "static/media/acervo.png": "/dev-wgleyberton/static/media/acervo.acc21df0643ef8557b61.png",
     "static/media/todoList.png": "/dev-wgleyberton/static/media/todoList.a797a1a93de97ecdf14d.png",
-    "static/media/mongodb-logo.png": "/dev-wgleyberton/static/media/mongodb-logo.b1130fab18408e0f94a0.png",
-    "static/media/github-logo.png": "/dev-wgleyberton/static/media/github-logo.bb1bcb4c34e56ddbc178.png",
+    "static/media/go-logo.png": "/dev-wgleyberton/static/media/go-logo.24c3691cf0259957a1fa.png",
+    "static/media/github-logo.png": "/dev-wgleyberton/static/media/github-logo.384e7d96640cb1394e10.png",
     "static/media/node-logo.png": "/dev-wgleyberton/static/media/node-logo.c6649cb118c1ede849ad.png",
+    "static/media/postgres-logo.png": "/dev-wgleyberton/static/media/postgres-logo.3cf9ba59a32bcc519675.png",
     "static/media/next-logo.png": "/dev-wgleyberton/static/media/next-logo.48ddc8121a0fcb543d64.png",
-    "static/media/css-3-logo.png": "/dev-wgleyberton/static/media/css-3-logo.bc75ccc78e3bf74f8aed.png",
     "static/media/csharp-logo.png": "/dev-wgleyberton/static/media/csharp-logo.f25b30cef849442c29da.png",
     "static/media/mysql-logo.png": "/dev-wgleyberton/static/media/mysql-logo.a04abbf76b39676bc4d9.png",
     "static/media/javascript-logo.png": "/dev-wgleyberton/static/media/javascript-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/dev-wgleyberton/index.html",
-    "main.139fea71.css.map": "/dev-wgleyberton/static/css/main.139fea71.css.map",
-    "main.138e1c93.js.map": "/dev-wgleyberton/static/js/main.138e1c93.js.map"
+    "main.a91a680c.css.map": "/dev-wgleyberton/static/css/main.a91a680c.css.map",
+    "main.a466e49d.js.map": "/dev-wgleyberton/static/js/main.a466e49d.js.map"
   },
   "entrypoints": [
-    "static/css/main.139fea71.css",
-    "static/js/main.138e1c93.js"
+    "static/css/main.a91a680c.css",
+    "static/js/main.a466e49d.js"
   ]
 }
