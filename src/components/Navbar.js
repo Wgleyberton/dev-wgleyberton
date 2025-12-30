@@ -25,7 +25,7 @@ const Navbar = ()=> {
               <div className="Menu">
 
               <button className="btn-scroll" onClick={() => handleClickScroll('sobre')}>Formação</button>
-              <button className="btn-scroll" onClick={() => handleClickScroll('habilidades')}>Tecnologias</button>
+              {/* <button className="btn-scroll" onClick={() => handleClickScroll('habilidades')}>Tecnologias</button> */}
               <button className="btn-scroll" onClick={() => handleClickScroll('portfolio')}>Portfólio</button>
               <button className="btn-scroll" onClick={() => handleClickScroll('contato')}>Contato</button>
                                   
