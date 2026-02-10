@@ -19,7 +19,7 @@ function Footer() {
                         <h4>Sobre</h4>
                         <p>
                             Desenvolvedor fullstack com ênfase em backend,
-                            atuando em diversas liinguagens e bancos de dados
+                            atuando em diversas linguagens e bancos de dados
                             relacionais, focado em performance, escalabilidade e boas
                             práticas de engenharia de software.
                         </p>
