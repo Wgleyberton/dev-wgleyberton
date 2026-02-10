@@ -8,14 +8,6 @@ const Contato = () => {
   const[email, setEmail] = useState('')
   const[message, setMessage] = useState('')
 
-  const handleClickScroll = () => {
-    const element = document.getElementById('home');
-    if(element){
-      element.scrollIntoView({behavior: 'smooth'})
-    }
-  };
-     
-
   function sendEmail(e) {
     e.preventDefault();
 
@@ -74,8 +66,6 @@ const Contato = () => {
             </form>
             
         </div>
-        <button className="btn-scroll" onClick={handleClickScroll}>Topo</button>
-      <div className="footer">© Wgleyberton Alencar 2023</div>
       </div>
     )
 }

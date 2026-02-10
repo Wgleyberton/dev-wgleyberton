@@ -39,22 +39,22 @@ const Home = () => {
     return (
         <div className="home" id="home">
             <div className="container-home">
-                <h2>Bem vindo!</h2>
                 <h3>Eu sou <span>Wgleyberton</span> Alencar</h3>
                 <p>
-                    Desenvolvedor <span>backend</span> com mais de 4 anos de experiência no desenvolvimento de sistemas, atuando fortemente com <span>PHP 8</span> e <span>Laravel</span> na construção de <span>APIs REST</span>, integrações, regras de negócio e bancos de dados relacionais, com ênfase em <span>PostgreSQL</span> e <span>SQL</span>.
+                    Sou Desenvolvedor de Software, com sólida formação acadêmica e trajetória consistente no
+                    desenvolvimento de soluções backend, web e mobile, atuando em ambientes corporativos e
+                    projetos de médio e grande porte. Minha experiência é marcada pela criação de sistemas robustos,
+                    escaláveis e bem estruturados, com forte foco em qualidade de código, desempenho e aderência às
+                    boas práticas de engenharia de software, sempre alinhando tecnologia às necessidades do negócio.
                 </p>
                 <br/>
                 <p>
-                    Possuo sólida experiência no desenvolvimento e evolução de soluções <span>backend</span>, com foco em performance, escalabilidade, manutenibilidade e boas práticas de engenharia de software. Ao longo da minha trajetória profissional, atuei em diferentes contextos e projetos, o que me proporcionou vivência com <span>ASP.NET</span>, <span>C#</span>, <span>Entity Framework</span> e <span>JavaScript</span>, ampliando minha visão técnica e arquitetural.
-                </p>
-                <br/>
-                <p>
-                    Tenho formação acadêmica consistente em tecnologia, sendo <span>Bacharel em Sistemas de Informação</span>, com Pós-graduação em <span>Desenvolvimento Back End</span>, Pós-graduação em <span>Engenharia de Software com ênfase em Testes e Qualidade de Software</span> e <span>MBA em Gestão de Tecnologia da Informação</span>. Atualmente, curso Pós-graduação em <span>DevOps</span>, aprofundando conhecimentos em automação, processos e cultura DevOps.
-                </p>
-                <br/>
-                <p>
-                    Atuo em ambientes ágeis <span>(Scrum)</span>, com forte foco em qualidade, testes, versionamento e boas práticas. Mantenho aprendizado contínuo, estudando <span>Java</span> e <span>Go (Golang)</span> com foco no desenvolvimento de APIs escaláveis e de alta performance, buscando sempre gerar impacto e valor através do software.
+                    Sou graduado em Sistemas de Informação, com MBA em Gestão de Tecnologia da Informação e
+                    pós-graduações em Engenharia de Software (Qualidade e Testes) e Desenvolvimento Back End. Possuo perfil
+                    analítico, organizado e orientado a resultados, com aprendizado contínuo e atualização constante
+                    em novas tecnologias. Busco oportunidades como Desenvolvedor, onde eu possa agregar
+                    valor técnico, colaborar com times de alta performance e evoluir profissionalmente em projetos
+                    desafiadores.
                 </p>
 
             </div>
@@ -62,6 +62,7 @@ const Home = () => {
                 <a {...git}>
                     <img alt="github" className="logo-sociais" src={github} />
                 </a>
+                <br/>
                 <a {...linkd}>
                     <img alt="linkedin" className="logo-sociais" src={linkedin} />
                 </a>

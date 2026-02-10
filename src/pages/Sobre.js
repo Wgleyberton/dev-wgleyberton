@@ -58,33 +58,50 @@ const Sobre = () => {
                     <h1>Experiências</h1>
                     <div className="cards-exp">
                         <div className="experiencias-card">
-                            <h2>Desenvolvedor PHP 8 Laravel</h2>
+                            <h2>Desenvolvedor Pleno</h2>
+                            <h2>PHP 8 | Laravel | PostgreSQL</h2>
                             <p>
-                                Atuação como Desenvolvedor Back End Pleno, com foco no desenvolvimento e manutenção de APIs REST em <span>PHP 8</span> utilizando o framework <span>Laravel</span>.
+                                Desenvolvimento de <span>APIs REST</span> utilizando <span>PHP 8</span> e <span>Laravel,  </span>
+                                administração e modelagem de banco de dados <span>PostgreSQL, </span>
+                                integração de sistemas e manutenção de serviços <span>backend, </span>
+                                implementação de regras de negócio e validações,
+                                suporte técnico e melhorias contínuas em aplicações existentes.
                             </p>
+                            <br />
+                            <span><p>PlayMóvel Tecnologia <br />2023 / 2025</p></span>
+                        </div>
+                        <div className="experiencias-card">
+                            <h2>Desenvolvedor Web</h2>
+                            <h2>C# | ASP.NET | Bootstrap</h2>
+                            <p>
+                                Desenvolvimento de aplicações em ASP.NET e C#
+                                Uso de Entity Framework e padrão MVC
+                                Criação de interfaces com Bootstrap
+                                Implementação de sistemas internos corporativos
+                                Manutenção evolutiva de aplicações web
+                            </p>
+                            <br />
+                            <span><p>Conselho Federal de Engenharia e Agronomia <br />2015 / 2016</p></span>
                         </div>
                         <div className="experiencias-card">
                             <h2>Desenvolvedor iOS</h2>
+                            <h2>Swift | Objective C </h2>
                             <p>
-                                Desenvolvimento e implantação de aplicativos mobile na plataforma <span>iOS </span>
-                                utilizando linguagem de programação <span>SWIFT</span> e <span>objective C </span>, padrão de desenvolvimento
-                                <span> CleanSwift</span> e metodologia <span>SCRUM</span>.
+                                Desenvolvimento de aplicativos mobile para a plataforma <span>iOS</span>, utilizando <span>Swift</span> e <span>Objective-C</span>, aplicando conceitos de arquitetura <span>Clean Swift</span>. Experiência prática com metodologia ágil <span>Scrum</span>, atuando em equipe multidisciplinar e colaborando em sprints, refinamentos e entregas contínuas.
                             </p>
+                            <br />
+                            <span><p>Wooba Soluções para Turismo <br /> 05/2016 / 09/2016 </p></span>
                         </div>
                         <div className="experiencias-card">
-                            <h2>Desenvolvedor de aplicativos Mobile</h2>
+                            <h2>Desenvolvedor Mobile</h2>
+                            <h2>Swift | Objective C </h2>
                             <p>
-                                Desenvolvimento e implantação de aplicativos mobile na plataforma <span>iOS </span>
-                                utilizando linguagem de programação <span>SWIFT</span> e <span>objective C</span>.
+                                Desenvolvimento e implantação de aplicativos autorais para a plataforma iOS, com foco em aprendizado prático, arquitetura de aplicações e boas práticas de desenvolvimento mobile.
                             </p>
+                            <br />
+                            <span><p>Apple Developer Academy <br /> 2014 / 2015 </p></span>
                         </div>
-                        <div className="experiencias-card">
-                            <h2>Desenvolvedor WEB</h2>
-                            <p>
-                                Desenvolvimento de aplicações em <span>ASP.NET</span> e <span>C#</span> com <span>Entity</span> framework e
-                                <span> MVC</span>, a aplicação desenvolvida se encontra no portfólio <span>(acervo de obras intelectuais)</span>
-                            </p>
-                        </div>
+
                     </div>
                 </div>
             </div>

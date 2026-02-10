@@ -4,10 +4,10 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 
 import App from './App.js'
 import Home from './pages/Home.js'
-import Skills from './pages/Skills.js'
 import Sobre from './pages/Sobre.js'
 import Contato from './pages/Contato.js'
 import Portfolio from './pages/Portfolio.js'
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

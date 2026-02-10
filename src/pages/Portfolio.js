@@ -28,11 +28,11 @@ const Portfolio = () => {
         target: "_blank",
         rel: "noreferrer",
     };
-    const marcador = {
-        href: "https://wgleyberton.github.io/marcador-de-pontos/",
-        target: "_blank",
-        rel: "noreferrer",
-    };
+    // const marcador = {
+    //     href: "https://wgleyberton.github.io/marcador-de-pontos/",
+    //     target: "_blank",
+    //     rel: "noreferrer",
+    // };
     const todolist = {
         href: "https://wgleyberton.github.io/todolist/",
         target: "_blank",
@@ -53,6 +53,11 @@ const Portfolio = () => {
         target: "_blank",
         rel: "noreferrer",
     };
+        const brasiliawizards = {
+        href: "https://www.brasiliawizards.com.br/home/",
+        target: "_blank",
+        rel: "noreferrer",
+    };
 
     return (
         <div className="portfolio" id="portfolio" >
@@ -68,6 +73,14 @@ const Portfolio = () => {
                             </p>
                         </div>
                     </div>
+                    <div className="card" id="brasiliawizards">
+                        <div className="content" >
+                            <a {...brasiliawizards} ><h3>Brasília Wizards Site Institucional</h3></a>
+                            <p>
+                                Este projeto é um site institucional desenvolvido em react vite e css.
+                            </p>
+                        </div>
+                    </div>
                     <div className="card" id="todolist" >
                         <div className="content"  >
                             <a {...todolist} ><h3>Todolist</h3></a>
@@ -76,14 +89,14 @@ const Portfolio = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="card" id="marcador">
+                    {/* <div className="card" id="marcador">
                         <div className="content" >
                             <a {...marcador} ><h3>Marcadador de pontos</h3></a>
                             <p>
                                 Este projeto é um marcador de pontos para competições e disputas de jiu-jitsu, desenvolvido em React para fixação do uso de useState.
                             </p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="card" id="contatos">
                         <div className="content">
                             <a {...contatos}><h3>Cadastro de Contatos</h3></a>
