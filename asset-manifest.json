@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dev-wgleyberton/static/css/main.d19bc57a.css",
-    "main.js": "/dev-wgleyberton/static/js/main.bc4ff419.js",
+    "main.js": "/dev-wgleyberton/static/js/main.26ca90a0.js",
     "static/media/barbershop.png": "/dev-wgleyberton/static/media/barbershop.4c0e320ee72b28bf82df.png",
     "static/media/movies.png": "/dev-wgleyberton/static/media/movies.dd2a7fbf83dc4fa4226b.png",
     "static/media/brasiliawizards.png": "/dev-wgleyberton/static/media/brasiliawizards.d44746ebe94bc840501c.png",
@@ -12,10 +12,10 @@
     "static/media/github-logo.png": "/dev-wgleyberton/static/media/github-logo.384e7d96640cb1394e10.png",
     "index.html": "/dev-wgleyberton/index.html",
     "main.d19bc57a.css.map": "/dev-wgleyberton/static/css/main.d19bc57a.css.map",
-    "main.bc4ff419.js.map": "/dev-wgleyberton/static/js/main.bc4ff419.js.map"
+    "main.26ca90a0.js.map": "/dev-wgleyberton/static/js/main.26ca90a0.js.map"
   },
   "entrypoints": [
     "static/css/main.d19bc57a.css",
-    "static/js/main.bc4ff419.js"
+    "static/js/main.26ca90a0.js"
   ]
 }
