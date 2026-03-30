@@ -1,48 +1,16 @@
-# Dev-Wgleyberton
+# React + Vite
 
-Bem-vindo ao repositório do projeto **Dev-Wgleyberton**!
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Objetivo
+Currently, two official plugins are available:
 
-Este projeto trata-se de um portfólio onde serão mantidas informações de aplicações desenvolvidas, tecnologias que estou utilizando e estudando, divulgação do meu github e linkedin e formas de entrar em contato.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Tecnologias Utilizadas
+## React Compiler
 
-O **Dev-Wgleyberton** é desenvolvido utilizando as seguintes tecnologias:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- HTML: Utilizado para a estruturação e marcação do conteúdo web.
-- CSS: Utilizado para a estilização e aparência visual do site.
-- JavaScript: Utilizado para adicionar interatividade e funcionalidades ao site.
-- Framework Bootstrap: Utilizado para agilizar o desenvolvimento e fornecer um design responsivo.
-- Git: Utilizado para controle de versão do código-fonte.
-- GitHub Pages: Utilizado para hospedar o site do projeto.
+## Expanding the ESLint configuration
 
-## Como Contribuir
-
-Se você deseja contribuir com o projeto **Dev-Wgleyberton**, siga as etapas abaixo:
-entre em contato pelo formulário na página https://wgleyberton.github.io/dev-wgleyberton/ com o assunto feedback, informando o que achou do meu portfólio e o que poderia ser melhorado.
-
-## Acessando pelo Github Pages
-
-https://wgleyberton.github.io/dev-wgleyberton/
-
-## Como Executar Localmente
-
-Para executar o **Dev-Wgleyberton** localmente em sua máquina, siga as etapas abaixo:
-
-1. Clone o repositório: `git clone https://github.com/Wgleyberton/dev-wgleyberton.git`.
-2. Navegue até o diretório do projeto: `cd dev-wgleyberton`.
-3. Abra o arquivo `index.html` em seu navegador web.
-
-## Recursos Adicionais
-
-Além do código-fonte do projeto, você também pode encontrar recursos adicionais neste repositório, como:
-
-- Documentação: Informações adicionais sobre o projeto, suas funcionalidades e como utilizá-lo.
-- Imagens: Imagens utilizadas no site.
-- Arquivos CSS e JavaScript: Arquivos de estilo e scripts adicionais, caso sejam utilizados no projeto.
-
-## Contato
-
-Se você tiver alguma dúvida, sugestão ou feedback sobre o projeto, sinta-se à vontade para entrar em contato com o desenvolvedor Wgleyberton através do seguinte e-mail: wgleybertonds@gmail.com
-Esperamos que você aprecie o projeto **Dev-Wgleyberton**! Obrigado por sua visita e contribuições.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
