@@ -46,7 +46,6 @@ const courses = [
     issuer: 'Udemy',
     year: 'Cursando',
   },
-
 ];
 
 const experiences = [
@@ -91,7 +90,6 @@ export default function SupportAnalyst() {
       <div className="sa__glow-bottom" />
 
       <div className="sa__content">
-
         {/* Hero */}
         <section className="sa__section">
           <motion.p
