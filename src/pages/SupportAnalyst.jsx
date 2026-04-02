@@ -32,6 +32,11 @@ const courses = [
     year: '2019',
   },
   {
+    title: 'Analista SOC',
+    issuer: 'Hackone',
+    year: 'Cursando',
+  },
+  {
     title: 'Formação Windows Server 2025',
     issuer: 'Udemy',
     year: 'Cursando',
