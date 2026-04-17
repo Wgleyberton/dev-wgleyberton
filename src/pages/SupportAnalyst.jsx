@@ -27,14 +27,14 @@ const courses = [
     year: '2026',
   },
   {
+    title: 'Analista SOC',
+    issuer: 'Hackone',
+    year: '2026',
+  },
+  {
     title: 'Introdução as Normas ISO 9001:2015 - Sistema de Gestão da Qualidade',
     issuer: 'ecursosonline',
     year: '2019',
-  },
-  {
-    title: 'Analista SOC',
-    issuer: 'Hackone',
-    year: 'Cursando',
   },
   {
     title: 'Formação Windows Server 2025',
