@@ -48,6 +48,21 @@ const courses = [
   },
 ];
 
+const projects = [
+  {
+    name: 'PortScan',
+    repo: 'https://github.com/wgleyberton/portscan',
+    functionality: 'Ferramenta de varredura de portas em redes TCP/IP. Permite identificar portas abertas em hosts-alvo, mapear serviços ativos e detectar banners de aplicações em execução.',
+    security: 'Reconhecimento de superfície de ataque, identificação de serviços expostos desnecessariamente, suporte a auditorias de rede e testes de penetração controlados em ambientes autorizados.',
+  },
+  {
+    name: 'Auto-Software-Deployment',
+    repo: 'https://github.com/wgleyberton/Auto-Software-Deployment',
+    functionality: 'Automação do ciclo de implantação de software: instalação, configuração e atualização de pacotes em ambientes Linux/Windows com controle de versão e logs de auditoria.',
+    security: 'Padronização de ambientes reduz desvios de configuração (configuration drift), acelera a aplicação de patches críticos de segurança e mantém rastreabilidade completa das mudanças realizadas.',
+  },
+];
+
 const experiences = [
   {
     role: 'Analista de Suporte',
@@ -197,6 +212,39 @@ export default function SupportAnalyst() {
           </div>
         </section>
 
+        {/* Projects */}
+        <section className="sa__section">
+          <SectionTitle label="Projetos" />
+          <div className="sa__proj-grid">
+            {projects.map((proj, i) => (
+              <motion.div
+                key={proj.name}
+                className="sa__proj-card"
+                variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={i}
+                whileHover={{ y: -4 }}
+                transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+              >
+                <div className="sa__proj-header">
+                  <div className="sa__proj-icon"><CodeIcon /></div>
+                  <a href={proj.repo} target="_blank" rel="noreferrer" className="sa__proj-link">
+                    <GithubIcon />
+                    <span>Ver repositório</span>
+                  </a>
+                </div>
+                <h3 className="sa__proj-name">{proj.name}</h3>
+                <div className="sa__proj-block">
+                  <span className="sa__proj-block-label">Descrição</span>
+                  <p className="sa__proj-block-text">{proj.functionality}</p>
+                </div>
+                <div className="sa__proj-block">
+                  <span className="sa__proj-block-label sa__proj-block-label--sec">Funcionalidade e Aplicação</span>
+                  <p className="sa__proj-block-text">{proj.security}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
         {/* Experience */}
         <section className="sa__section sa__section--exp">
           <SectionTitle label="Experiência" />
@@ -246,6 +294,22 @@ function BookIcon() {
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
       <path d="M2 2.5A1.5 1.5 0 013.5 1H13v11H3.5A1.5 1.5 0 012 10.5v-8z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
       <path d="M13 12v2H3.5A1.5 1.5 0 012 12.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function CodeIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M5 4L1 8L5 12M11 4L15 8L11 12M9 2L7 14" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function GithubIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
     </svg>
   );
 }
