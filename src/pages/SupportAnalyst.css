@@ -195,6 +195,13 @@
   color: rgba(255, 240, 235, 0.35);
 }
 
+.sa__cert-credential {
+  font-size: 10px;
+  color: rgba(255, 107, 53, 0.5);
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.05em;
+}
+
 .sa__cert-year {
   font-size: 12px;
   padding: 3px 10px;

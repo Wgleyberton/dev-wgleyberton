@@ -289,6 +289,13 @@
   color: rgba(224, 244, 255, 0.35);
 }
 
+.dev__cert-credential {
+  font-size: 10px;
+  color: rgba(0, 200, 255, 0.45);
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.05em;
+}
+
 .dev__cert-year {
   font-size: 12px;
   padding: 3px 10px;

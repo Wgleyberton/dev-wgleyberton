@@ -22,11 +22,17 @@ const skills = [
 
 const certifications = [
   {
+    title: 'ITIL 4 Foundation',
+    issuer: 'PeopleCert',
+    year: '2026',
+    credential: 'GR671880397WN',
+  },
+  {
     title: 'Scrum Fundamentals Certified',
     issuer: 'Scrum Study',
     year: '2017',
     credential: '587295',
-  },
+  }
 ];
 
 const experiences = [
@@ -186,6 +192,9 @@ export default function Developer() {
                 <div className="dev__cert-info">
                   <span className="dev__cert-title">{cert.title}</span>
                   <span className="dev__cert-issuer">{cert.issuer}</span>
+                  {cert.credential && (
+                    <span className="dev__cert-credential">#{cert.credential}</span>
+                  )}
                 </div>
                 <span className="dev__cert-year">{cert.year}</span>
               </motion.div>

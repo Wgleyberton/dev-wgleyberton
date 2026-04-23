@@ -48,6 +48,21 @@ const courses = [
   },
 ];
 
+const certifications = [
+  {
+    title: 'ITIL 4 Foundation',
+    issuer: 'PeopleCert',
+    year: '2026',
+    credential: 'GR671880397WN',
+  },
+  {
+    title: 'Scrum Fundamentals Certified',
+    issuer: 'Scrum Study',
+    year: '2017',
+    credential: '587295',
+  },
+];
+
 const projects = [
   {
     name: 'PortScan',
@@ -84,6 +99,15 @@ const experiences = [
       'Gerenciamento de fila de chamados.',
       'Documentação de infraestrutura de serviços.',
     ],
+  },
+];
+
+const certifications = [
+  {
+    title: 'ITIL 4 Foundation',
+    issuer: 'PeopleCert',
+    year: '2026',
+    credential: '',
   },
 ];
 
@@ -163,7 +187,7 @@ export default function SupportAnalyst() {
         </section>
 
         {/* Certifications */}
-        {/*<section className="sa__section">
+        <section className="sa__section">
           <SectionTitle label="Certificações" />
           <div className="sa__cert-grid">
             {certifications.map((cert, i) => (
@@ -180,12 +204,15 @@ export default function SupportAnalyst() {
                 <div className="sa__cert-info">
                   <span className="sa__cert-title">{cert.title}</span>
                   <span className="sa__cert-issuer">{cert.issuer}</span>
+                  {cert.credential && (
+                    <span className="sa__cert-credential">#{cert.credential}</span>
+                  )}
                 </div>
                 <span className="sa__cert-year">{cert.year}</span>
               </motion.div>
             ))}
           </div>
-        </section>*/}
+        </section>
 
         {/* Courses */}
         <section className="sa__section">
