@@ -102,15 +102,6 @@ const experiences = [
   },
 ];
 
-const certifications = [
-  {
-    title: 'ITIL 4 Foundation',
-    issuer: 'PeopleCert',
-    year: '2026',
-    credential: '',
-  },
-];
-
 const metrics = [
   { n: '92%', label: 'CSAT médio' },
   { n: '200+', label: 'Usuários atendidos' },
