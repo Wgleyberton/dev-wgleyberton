@@ -28,6 +28,12 @@ const certifications = [
     credential: 'GR671880397WN',
   },
   {
+    title: 'Google Cybersecurity',
+    issuer: 'Coursera',
+    year: '2026',
+    credential: '9DWEECNEFY4Y',
+  },
+  {
     title: 'Scrum Fundamentals Certified',
     issuer: 'Scrum Study',
     year: '2017',
