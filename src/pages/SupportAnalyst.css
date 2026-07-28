@@ -446,3 +446,46 @@
   cursor: pointer;
   font-family: 'Inter', sans-serif;
 }
+
+/* ===== MOBILE ===== */
+@media (max-width: 640px) {
+  .sa__content {
+    padding: 100px 20px 60px;
+  }
+
+  .sa__title,
+  .sa__contact-title {
+    overflow-wrap: break-word;
+  }
+
+  .sa__metrics {
+    gap: 32px;
+  }
+
+  .sa__exp-card {
+    padding: 24px 20px;
+  }
+
+  .sa__proj-card {
+    padding: 22px;
+  }
+
+  .sa__cert-card {
+    align-items: flex-start;
+  }
+
+  .sa__cert-title {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    overflow-wrap: break-word;
+  }
+
+  .sa__exp-role {
+    overflow-wrap: break-word;
+  }
+
+  .sa__contact {
+    padding: 36px 22px;
+  }
+}
