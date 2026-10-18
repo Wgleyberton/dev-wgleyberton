@@ -1,10 +1,13 @@
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import Home from './pages/Home';
 import Developer from './pages/Developer';
 import SupportAnalyst from './pages/SupportAnalyst';
 import './styles/globals.css';
+
+// Área logada carregada sob demanda: o portfólio não baixa o SDK do Supabase
+const AppRoutes = lazy(() => import('./app/AppRoutes'));
 
 const pageVariants = {
   initial: { opacity: 0, y: 20 },
@@ -22,7 +25,7 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        key={location.pathname}
+        key={location.pathname.startsWith('/app') ? '/app' : location.pathname}
         variants={pageVariants}
         initial="initial"
         animate="animate"
@@ -32,6 +35,14 @@ function AnimatedRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/developer" element={<Developer />} />
           <Route path="/support-analyst" element={<SupportAnalyst />} />
+          <Route
+            path="/app/*"
+            element={
+              <Suspense fallback={null}>
+                <AppRoutes />
+              </Suspense>
+            }
+          />
         </Routes>
       </motion.div>
     </AnimatePresence>

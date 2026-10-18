@@ -6,6 +6,7 @@ const navLinks = [
   { to: '/', label: 'Home' },
   { to: '/developer', label: 'Developer' },
   { to: '/support-analyst', label: 'Support Analyst' },
+  { to: '/app', label: 'Área Restrita' },
 ];
 
 export default function Footer({ accent = '#c9a84c' }) {
