@@ -1,0 +1,32 @@
+# Evita que o projeto Supabase (plano gratuito) seja pausado por inatividade (~7 dias).
+# Faz uma consulta real ao banco a cada 5 dias via API REST com a chave pública.
+name: Supabase keep-alive
+
+on:
+  schedule:
+    # 12:00 UTC nos dias 1, 6, 11, 16, 21, 26 e 31 de cada mês (intervalo máximo de 5 dias)
+    - cron: '0 12 */5 * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Consultar banco
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+        run: |
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_ANON_KEY" ]; then
+            echo "::error::Secrets SUPABASE_URL e SUPABASE_ANON_KEY não configurados"
+            exit 1
+          fi
+          status=$(curl -s -o /dev/null -w '%{http_code}' --retry 3 --retry-delay 10 \
+            "$SUPABASE_URL/rest/v1/profiles?select=id&limit=1" \
+            -H "apikey: $SUPABASE_ANON_KEY")
+          echo "HTTP $status"
+          if [ "$status" -lt 200 ] || [ "$status" -ge 300 ]; then
+            echo "::error::Ping falhou (HTTP $status). O projeto pode estar pausado."
+            exit 1
+          fi
