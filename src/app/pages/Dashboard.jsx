@@ -1,87 +1,114 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { supabase } from '../lib/supabaseClient';
-import { useAuth } from '../auth/AuthContext';
+import { Link } from 'react-router-dom';
+import { useFinance } from '../finance/FinanceContext';
+import { EMERGENCY_MONTHS, formatBRL, formatPercent } from '../finance/model';
+import FinanceGate from '../components/FinanceGate';
+import FlowChart from '../components/FlowChart';
+import IncomeDonut from '../components/IncomeDonut';
+import StatTile from '../components/StatTile';
+import TopExpenses from '../components/TopExpenses';
+import { ExpenseIcon, IncomeIcon, LogoMark, ShieldIcon } from '../layout/icons';
 
-const roleLabels = { admin: 'Administrador', user: 'Usuário' };
-
-export default function Dashboard() {
-  const { user, profile, refreshProfile } = useAuth();
-  const [editing, setEditing] = useState(false);
-  const [name, setName] = useState('');
-  const [error, setError] = useState(null);
-  const [saving, setSaving] = useState(false);
-
-  function startEditing() {
-    setName(profile?.full_name ?? '');
-    setError(null);
-    setEditing(true);
-  }
-
-  async function handleSave(e) {
-    e.preventDefault();
-    setSaving(true);
-    const { error: updateError } = await supabase
-      .from('profiles')
-      .update({ full_name: name.trim() || null })
-      .eq('id', user.id);
-    setSaving(false);
-    if (updateError) {
-      setError('Não foi possível salvar o nome.');
-      return;
-    }
-    await refreshProfile();
-    setEditing(false);
-  }
-
-  const firstName = profile?.full_name?.split(' ')[0];
+function Overview() {
+  const { entries, summary } = useFinance();
+  const {
+    totalIncome, totalEssential, totalNonEssential, totalExpenses, balance, emergencyReserve,
+  } = summary;
+  const share = (v) => (totalIncome > 0 ? `${formatPercent(v / totalIncome)} da renda` : null);
 
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-    >
-      <p className="app__eyebrow">Dashboard</p>
-      <h1 className="app__title">Olá{firstName ? `, ${firstName}` : ''}.</h1>
+    <div className="dashboard">
+      <section className="hero">
+        <div className="hero__top">
+          <span className="hero__logo"><LogoMark /></span>
+          <span className="hero__tag">{balance >= 0 ? 'Sobra mensal' : 'Déficit mensal'}</span>
+        </div>
+        <span className="hero__value">{formatBRL(balance)}</span>
+        <p className="hero__text">
+          {balance >= 0
+            ? 'Se sua planilha estiver correta, todo mês vai sobrar este valor.'
+            : 'Suas despesas estão maiores que suas receitas. Revise os gastos não essenciais.'}
+        </p>
+        <div className="hero__actions">
+          <Link to="/app/receitas" className="hero__action"><IncomeIcon />Receitas</Link>
+          <Link to="/app/despesas" className="hero__action"><ExpenseIcon />Despesas</Link>
+        </div>
+      </section>
 
-      <div className="app__card app__card--wide">
-        <h2 className="app__card-title">Meu perfil</h2>
-        <dl className="app__details">
-          <dt>E-mail</dt>
-          <dd>{user?.email}</dd>
-          <dt>Nome</dt>
-          <dd>
-            {editing ? (
-              <form className="app__inline-form" onSubmit={handleSave}>
-                <input
-                  className="app__input"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  maxLength={120}
-                  autoFocus
-                />
-                <button className="app__btn" type="submit" disabled={saving}>Salvar</button>
-                <button className="app__btn app__btn--ghost" type="button" onClick={() => setEditing(false)}>
-                  Cancelar
-                </button>
-              </form>
-            ) : (
-              <>
-                {profile?.full_name || <span className="app__muted">Não informado</span>}
-                <button type="button" className="app__link app__link--inline" onClick={startEditing}>
-                  editar
-                </button>
-              </>
-            )}
-            {error && <p className="app__error" role="alert">{error}</p>}
-          </dd>
-          <dt>Perfil</dt>
-          <dd>{profile ? roleLabels[profile.role] ?? profile.role : '—'}</dd>
-          <dt>Membro desde</dt>
-          <dd>{profile ? new Date(profile.created_at).toLocaleDateString('pt-BR') : '—'}</dd>
-        </dl>
+      <div className="stats">
+        <StatTile tone="income" icon={<IncomeIcon />} label="Total de entradas" value={formatBRL(totalIncome)} />
+        <StatTile
+          tone="essential"
+          icon={<ExpenseIcon />}
+          label="Despesas essenciais"
+          value={formatBRL(totalEssential)}
+          hint={share(totalEssential)}
+        />
+        <StatTile
+          tone="non_essential"
+          icon={<ExpenseIcon />}
+          label="Despesas não essenciais"
+          value={formatBRL(totalNonEssential)}
+          hint={share(totalNonEssential)}
+        />
+        <StatTile
+          tone="neutral"
+          icon={<ShieldIcon />}
+          label="Reserva de emergência ideal"
+          value={formatBRL(emergencyReserve)}
+          hint={`${EMERGENCY_MONTHS}× o custo de vida básico`}
+        />
       </div>
-    </motion.section>
+
+      <section className="card dashboard__flow">
+        <div className="card__header">
+          <h2 className="card__title">Entradas x Saídas</h2>
+          <span className="muted">Mensal</span>
+        </div>
+        <FlowChart summary={summary} />
+      </section>
+
+      <section className="card dashboard__donut">
+        <div className="card__header">
+          <h2 className="card__title">Para onde vai sua renda</h2>
+        </div>
+        <IncomeDonut summary={summary} />
+      </section>
+
+      <section className="card dashboard__top">
+        <div className="card__header">
+          <h2 className="card__title">Maiores despesas</h2>
+          <Link to="/app/despesas" className="link">Ver todas</Link>
+        </div>
+        <TopExpenses entries={entries} totalExpenses={totalExpenses} />
+      </section>
+
+      <section className="card dashboard__summary">
+        <div className="card__header">
+          <h2 className="card__title">Resumo</h2>
+        </div>
+        <table className="table table--summary">
+          <tbody>
+            <tr><td>Total de entradas</td><td className="table__num">{formatBRL(totalIncome)}</td></tr>
+            <tr><td>Total de despesas essenciais</td><td className="table__num">{formatBRL(totalEssential)}</td></tr>
+            <tr><td>Total de despesas não essenciais</td><td className="table__num">{formatBRL(totalNonEssential)}</td></tr>
+            <tr><td>Total geral de despesas</td><td className="table__num">{formatBRL(totalExpenses)}</td></tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>{balance >= 0 ? 'Sobra mensal' : 'Déficit mensal'}</td>
+              <td className={`table__num ${balance < 0 ? 'text-danger' : ''}`}>{formatBRL(balance)}</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </div>
+  );
+}
+
+export default function Dashboard() {
+  return (
+    <FinanceGate>
+      <Overview />
+    </FinanceGate>
   );
 }

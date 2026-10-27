@@ -8,6 +8,9 @@ import Login from './pages/Login';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import Dashboard from './pages/Dashboard';
+import Income from './pages/Income';
+import Expenses from './pages/Expenses';
+import Profile from './pages/Profile';
 import './app.css';
 
 export default function AppRoutes() {
@@ -29,6 +32,9 @@ export default function AppRoutes() {
         <Route element={<ProtectedRoute />}>
           <Route element={<AppLayout />}>
             <Route index element={<Dashboard />} />
+            <Route path="receitas" element={<Income />} />
+            <Route path="despesas" element={<Expenses />} />
+            <Route path="perfil" element={<Profile />} />
           </Route>
         </Route>
         <Route path="*" element={<Navigate to="/app" replace />} />
