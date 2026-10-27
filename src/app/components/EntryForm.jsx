@@ -1,6 +1,16 @@
 import { useState } from 'react';
 import { amountToInput, groupLabels, parseAmount } from '../finance/model';
 
+const amountLabels = {
+  income: 'Valor mensal',
+  expense: 'Valor médio mensal',
+  investment: 'Saldo atual',
+};
+
+const notePlaceholders = {
+  investment: 'Ex.: instituição, tipo de aplicação, vencimento',
+};
+
 export default function EntryForm({ entry, kind, defaultGroup, onSubmit, onCancel }) {
   const [description, setDescription] = useState(entry?.description ?? '');
   const [note, setNote] = useState(entry?.note ?? '');
@@ -56,6 +66,7 @@ export default function EntryForm({ entry, kind, defaultGroup, onSubmit, onCance
           className="form__input"
           value={note}
           onChange={(e) => setNote(e.target.value)}
+          placeholder={notePlaceholders[kind]}
           maxLength={200}
         />
       </label>
@@ -81,7 +92,7 @@ export default function EntryForm({ entry, kind, defaultGroup, onSubmit, onCance
       )}
 
       <label className="form__label">
-        {kind === 'expense' ? 'Valor médio mensal' : 'Valor mensal'}
+        {amountLabels[kind]}
         <div className="form__money">
           <span>R$</span>
           <input

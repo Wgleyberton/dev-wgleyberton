@@ -5,8 +5,10 @@ import { EditIcon, PlusIcon, TrashIcon } from '../layout/icons';
 import EntryForm from './EntryForm';
 import Modal from './Modal';
 
-// Tabela editável de lançamentos de um grupo (receitas, despesas essenciais ou não essenciais)
-export default function EntryTable({ title, entries, kind, group, totalLabel, swatch }) {
+const newTitles = { income: 'Nova receita', expense: 'Nova despesa', investment: 'Novo investimento' };
+
+// Tabela editável de lançamentos de um grupo (receitas, despesas essenciais/não essenciais ou investimentos)
+export default function EntryTable({ title, entries, kind, group, totalLabel, swatch, valueLabel = 'Valor' }) {
   const { create, update, remove } = useFinance();
   // null = fechado · { mode: 'create' } · { mode: 'edit', entry } · { mode: 'delete', entry }
   const [dialog, setDialog] = useState(null);
@@ -55,7 +57,7 @@ export default function EntryTable({ title, entries, kind, group, totalLabel, sw
           <thead>
             <tr>
               <th>Descrição</th>
-              <th className="table__num">Valor</th>
+              <th className="table__num">{valueLabel}</th>
               <th className="table__actions"><span className="sr-only">Ações</span></th>
             </tr>
           </thead>
@@ -106,7 +108,7 @@ export default function EntryTable({ title, entries, kind, group, totalLabel, sw
       </div>
 
       {(dialog?.mode === 'create' || dialog?.mode === 'edit') && (
-        <Modal title={dialog.mode === 'edit' ? 'Editar lançamento' : `Nova ${kind === 'income' ? 'receita' : 'despesa'}`} onClose={close}>
+        <Modal title={dialog.mode === 'edit' ? 'Editar lançamento' : newTitles[kind]} onClose={close}>
           <EntryForm
             entry={dialog.entry}
             kind={kind}

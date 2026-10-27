@@ -76,6 +76,7 @@ export default function FinanceProvider({ children }) {
       income: sorted.filter((e) => e.kind === 'income'),
       essential: sorted.filter((e) => e.expense_group === 'essential'),
       nonEssential: sorted.filter((e) => e.expense_group === 'non_essential'),
+      investments: sorted.filter((e) => e.kind === 'investment'),
       summary: computeSummary(sorted),
       loading,
       error,

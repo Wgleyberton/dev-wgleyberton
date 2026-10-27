@@ -3,13 +3,14 @@ import { Link, NavLink, Outlet, useLocation, useNavigate } from 'react-router-do
 import { useAuth } from '../auth/AuthContext';
 import FinanceProvider from '../finance/FinanceProvider';
 import {
-  CloseIcon, DashboardIcon, ExpenseIcon, HomeIcon, IncomeIcon, LogoMark, LogoutIcon, MenuIcon, UserIcon,
+  CloseIcon, DashboardIcon, ExpenseIcon, HomeIcon, IncomeIcon, InvestmentIcon, LogoMark, LogoutIcon, MenuIcon, UserIcon,
 } from './icons';
 
 const navItems = [
   { to: '/app', label: 'Visão geral', icon: <DashboardIcon />, end: true },
   { to: '/app/receitas', label: 'Receitas', icon: <IncomeIcon /> },
   { to: '/app/despesas', label: 'Despesas', icon: <ExpenseIcon /> },
+  { to: '/app/investimentos', label: 'Investimentos', icon: <InvestmentIcon /> },
   { to: '/app/perfil', label: 'Meu perfil', icon: <UserIcon /> },
 ];
 

@@ -81,18 +81,24 @@ export function computeSummary(entries) {
   const income = entries.filter((e) => e.kind === 'income');
   const essential = entries.filter((e) => e.expense_group === 'essential');
   const nonEssential = entries.filter((e) => e.expense_group === 'non_essential');
+  const investments = entries.filter((e) => e.kind === 'investment');
 
   const totalIncome = sum(income);
   const totalEssential = sum(essential);
   const totalNonEssential = sum(nonEssential);
   const totalExpenses = totalEssential + totalNonEssential;
+  const totalInvestments = sum(investments);
+  const balance = totalIncome - totalExpenses;
 
   return {
     totalIncome,
     totalEssential,
     totalNonEssential,
     totalExpenses,
-    balance: totalIncome - totalExpenses,
+    totalInvestments,
+    balance,
+    // Sobra mensal + saldo acumulado em investimentos
+    balanceWithInvestments: balance + totalInvestments,
     emergencyReserve: totalEssential * EMERGENCY_MONTHS,
     committedRatio: totalIncome > 0 ? totalExpenses / totalIncome : null,
   };

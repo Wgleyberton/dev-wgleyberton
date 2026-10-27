@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { useFinance } from '../finance/FinanceContext';
 import { WalletIcon } from '../layout/icons';
 
-// Trata carregamento, erro e o estado vazio (oferece carregar o modelo padrão)
-export default function FinanceGate({ children }) {
+// Trata carregamento, erro e o estado vazio (oferece carregar o modelo padrão).
+// skipEmpty: a página funciona sem receitas/despesas (ex.: Investimentos)
+export default function FinanceGate({ children, skipEmpty = false }) {
   const { entries, loading, error, loadTemplate } = useFinance();
+  const hasBudget = entries.some((e) => e.kind === 'income' || e.kind === 'expense');
   const [seeding, setSeeding] = useState(false);
   const [seedError, setSeedError] = useState(null);
 
@@ -25,7 +27,7 @@ export default function FinanceGate({ children }) {
     );
   }
 
-  if (entries.length === 0) {
+  if (!hasBudget && !skipEmpty) {
     async function handleSeed() {
       setSeeding(true);
       setSeedError(null);

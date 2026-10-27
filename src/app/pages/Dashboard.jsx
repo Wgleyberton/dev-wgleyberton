@@ -6,33 +6,58 @@ import FlowChart from '../components/FlowChart';
 import IncomeDonut from '../components/IncomeDonut';
 import StatTile from '../components/StatTile';
 import TopExpenses from '../components/TopExpenses';
-import { ExpenseIcon, IncomeIcon, LogoMark, ShieldIcon } from '../layout/icons';
+import { ExpenseIcon, IncomeIcon, InvestmentIcon, LogoMark, ShieldIcon } from '../layout/icons';
 
 function Overview() {
   const { entries, summary } = useFinance();
   const {
     totalIncome, totalEssential, totalNonEssential, totalExpenses, balance, emergencyReserve,
+    totalInvestments, balanceWithInvestments,
   } = summary;
   const share = (v) => (totalIncome > 0 ? `${formatPercent(v / totalIncome)} da renda` : null);
 
   return (
     <div className="dashboard">
-      <section className="hero">
-        <div className="hero__top">
-          <span className="hero__logo"><LogoMark /></span>
-          <span className="hero__tag">{balance >= 0 ? 'Sobra mensal' : 'Déficit mensal'}</span>
-        </div>
-        <span className="hero__value">{formatBRL(balance)}</span>
-        <p className="hero__text">
-          {balance >= 0
-            ? 'Se sua planilha estiver correta, todo mês vai sobrar este valor.'
-            : 'Suas despesas estão maiores que suas receitas. Revise os gastos não essenciais.'}
-        </p>
-        <div className="hero__actions">
-          <Link to="/app/receitas" className="hero__action"><IncomeIcon />Receitas</Link>
-          <Link to="/app/despesas" className="hero__action"><ExpenseIcon />Despesas</Link>
-        </div>
-      </section>
+      <div className="heroes">
+        <section className="hero">
+          <div className="hero__top">
+            <span className="hero__logo"><LogoMark /></span>
+            <span className="hero__tag">{balance >= 0 ? 'Sobra mensal' : 'Déficit mensal'}</span>
+          </div>
+          <span className="hero__value">{formatBRL(balance)}</span>
+          <p className="hero__text">
+            {balance >= 0
+              ? 'Se sua planilha estiver correta, todo mês vai sobrar este valor.'
+              : 'Suas despesas estão maiores que suas receitas. Revise os gastos não essenciais.'}
+          </p>
+          <div className="hero__actions">
+            <Link to="/app/receitas" className="hero__action"><IncomeIcon />Receitas</Link>
+            <Link to="/app/despesas" className="hero__action"><ExpenseIcon />Despesas</Link>
+          </div>
+        </section>
+
+        <section className="hero hero--light">
+          <div className="hero__top">
+            <span className="hero__logo"><InvestmentIcon /></span>
+            <span className="hero__tag">Sobra mensal + investimentos</span>
+          </div>
+          <span className="hero__value">{formatBRL(balanceWithInvestments)}</span>
+          <div className="hero__breakdown">
+            <div>
+              <span className="hero__breakdown-label">{balance >= 0 ? 'Sobra mensal' : 'Déficit mensal'}</span>
+              <strong>{formatBRL(balance)}</strong>
+            </div>
+            <span className="hero__breakdown-plus" aria-hidden="true">+</span>
+            <div>
+              <span className="hero__breakdown-label">Total investido</span>
+              <strong>{formatBRL(totalInvestments)}</strong>
+            </div>
+          </div>
+          <div className="hero__actions">
+            <Link to="/app/investimentos" className="hero__action"><InvestmentIcon />Investimentos</Link>
+          </div>
+        </section>
+      </div>
 
       <div className="stats">
         <StatTile tone="income" icon={<IncomeIcon />} label="Total de entradas" value={formatBRL(totalIncome)} />

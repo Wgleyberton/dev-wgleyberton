@@ -10,6 +10,7 @@ import ResetPassword from './pages/ResetPassword';
 import Dashboard from './pages/Dashboard';
 import Income from './pages/Income';
 import Expenses from './pages/Expenses';
+import Investments from './pages/Investments';
 import Profile from './pages/Profile';
 import './app.css';
 
@@ -34,6 +35,7 @@ export default function AppRoutes() {
             <Route index element={<Dashboard />} />
             <Route path="receitas" element={<Income />} />
             <Route path="despesas" element={<Expenses />} />
+            <Route path="investimentos" element={<Investments />} />
             <Route path="perfil" element={<Profile />} />
           </Route>
         </Route>
